@@ -183,7 +183,7 @@ body .body--opened-menu {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding-top: 5px;
 }
 
