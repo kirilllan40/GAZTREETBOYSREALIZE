@@ -10,7 +10,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(251, 0, 255, 0.427)), url(img/gaztreetboys.svg) no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(153 255 1 / 70%)), url(img/gaztreetboys.svg) no-repeat;
     background-size: 80%;
     background-position:50%;
     background-color: rgb(255, 255, 255);

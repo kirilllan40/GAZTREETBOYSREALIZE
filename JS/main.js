@@ -97,7 +97,7 @@ const swiper = new Swiper('.market__slider', {
 // modal -------------------------------------------
 
 const modal = document.querySelector('.modal');
-const modalButton = document.querySelectorAll('.slide__description');
+const modalButton = document.querySelectorAll('.slide__description-link');
 
 modalButton.forEach(b => b.addEventListener('click', openModal));
 modal.addEventListener('click', closeModal);
