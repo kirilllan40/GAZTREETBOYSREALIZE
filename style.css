@@ -384,7 +384,7 @@ body .body--opened-menu {
     height: 600px;
     /* background: url(img/video-background-graffity2.jpg) no-repeat; */
     background-size: cover;
-    
+
 }
 
 .promo__video-1 {
@@ -400,7 +400,7 @@ body .body--opened-menu {
     /* background: url(img/background_section-2.svg) no-repeat; */
     background-size: cover;
     background-color: black;
-    
+
 }
 
 .market__slider {
@@ -423,13 +423,13 @@ div#slider_2 {
     height: 380px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+
 }
 
 .market__slide .swiper-slide {
     width: 100%;
     background: black;
-    
+
 }
 
 
@@ -676,10 +676,29 @@ div#slider_2 {
     height: 100%;
 }
 
+.marquee {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 .footer__link-slogan {
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
     font-size: 10px;
     color: rgba(208, 197, 197, 0.592);
     transition: .5s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-100%); /* начать справа */
+    }
+    100% {
+        transform: translateX(0); /* закончить слева */
+    }
 }
 
 .footer__link-slogan:hover {
