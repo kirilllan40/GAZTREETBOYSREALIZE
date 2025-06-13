@@ -686,6 +686,7 @@ div#slider_2 {
 .footer__link-slogan {
     flex-shrink: 0;
     white-space: nowrap;
+    padding-left: 20px;
     animation: marquee 15s linear infinite;
     font-size: 10px;
     color: rgba(208, 197, 197, 0.592);
