@@ -103,6 +103,7 @@ modalButton.forEach(b => b.addEventListener('click', openModal));
 modal.addEventListener('click', closeModal);
 
 function openModal(e) {
+    e.preventDefault();
     document.body.classList.toggle('body--modal-opened');
 }
 

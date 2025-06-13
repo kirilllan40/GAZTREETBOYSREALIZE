@@ -229,8 +229,7 @@ body .body--opened-menu {
 }
 
 
-.link__slogan:hover,
-.about__text-link-slogan:hover {
+.about__text-link-slogan:hover p {
     color: rgb(153, 255, 0);
     transition: 0.5s;
 }
@@ -672,7 +671,7 @@ div#slider_2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px 10px;
+    padding: 3px 10px 3px;
     gap: 15px;
     height: 100%;
 }
