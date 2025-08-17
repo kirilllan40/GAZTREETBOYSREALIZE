@@ -400,18 +400,18 @@ body .body--opened-menu {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     justify-content: center;
     height: 600px;
     /* background: url(img/video-background-graffity2.jpg) no-repeat; */
     background-size: cover;
-
+    
 }
 
 .promo__video-1 {
-    width: 350px;
-    height: 100%;
-    border-radius: 15px;
+    width: 94%;
+    height: 81%;
+    border-radius: 10px;
 }
 
 /* ================================ */
