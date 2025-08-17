@@ -21,10 +21,10 @@
 //---------------first-slider------------------
 
 const swiperGallery = new Swiper('.gallery__slider', {
-    effect: 'cards',
-    cardsEffect: {
-        slideShadows: false
-    },
+    effect: 'slide',
+    // cardsEffect: {
+    //     slideShadows: false
+    // },
     loop: false,
     slidesPerView: 1,
     spaceBetween: 10,
