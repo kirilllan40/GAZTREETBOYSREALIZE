@@ -409,8 +409,8 @@ body .body--opened-menu {
 }
 
 .promo__video-1 {
-    width: 94%;
-    height: 81%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -883,6 +883,10 @@ div#slider_2 {
     /* .modal__window {
         height: 90%;
     } */
+
+    .promo__video {
+        width: 95%;
+    }
 }
 
 @media (max-height: 600px) {
