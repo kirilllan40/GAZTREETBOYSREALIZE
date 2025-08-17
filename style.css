@@ -405,12 +405,16 @@ body .body--opened-menu {
     height: 600px;
     /* background: url(img/video-background-graffity2.jpg) no-repeat; */
     background-size: cover;
-    
 }
 
 .promo__video-1 {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent; /* Прозрачная граница, чтобы border-image отображался */
+    border-image-source: linear-gradient(to right, rgb(101, 0, 101), rgb(247, 0, 255), rgb(0, 255, 0));
+    border-image-slice: 1;
+    border-image-width: 10px; /* Ширина границы градиента */
+    border-image-repeat: stretch;
 }
 
 /* ================================ */
