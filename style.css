@@ -397,24 +397,44 @@ body .body--opened-menu {
 }
 
 .promo__video {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 85%;
     justify-content: center;
-    height: 600px;
+    height: auto;
     /* background: url(img/video-background-graffity2.jpg) no-repeat; */
     background-size: cover;
 }
 
+
+
 .promo__video-1 {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 5px;
-    border: 2px solid transparent; /* Прозрачная граница, чтобы border-image отображался */
+    border: 2px solid transparent;
     border-image-source: linear-gradient(to right, rgb(101, 0, 101), rgb(247, 0, 255), rgb(0, 255, 0));
     border-image-slice: 1;
-    border-image-width: 10px; /* Ширина границы градиента */
+    border-image-width: 10px;
     border-image-repeat: stretch;
+}
+
+
+.mute__btn {
+    position: absolute;
+    bottom: 8%;    
+    right: 5%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(21, 255, 0, 0.26);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 11;
 }
 
 /* ================================ */

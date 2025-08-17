@@ -41,8 +41,26 @@ const swiperGallery = new Swiper('.gallery__slider', {
         disableOnInteraction: false,
     },
 
-    
+
 });
+
+// -----------------sound----------------------
+    const video = document.getElementById("video");
+    const muteBtn = document.getElementById("muteBtn");
+
+
+    muteBtn.addEventListener("click", () => {
+        console.log("Кнопка нажата");
+        if (video.muted) {
+            video.muted = false;
+            video.volume = 1.0;
+            video.play().catch(err => console.log("play blocked:", err));
+            muteBtn.textContent = "🔊";
+        } else {
+            video.muted = true;
+            muteBtn.textContent = "🔇";
+        }
+    });
 
 
 // -----------------swiper---------------------
