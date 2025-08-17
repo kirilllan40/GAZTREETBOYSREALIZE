@@ -177,7 +177,11 @@ body .body--opened-menu {
     border-bottom: 1px black solid;
 }
 
-.about__wrapper {}
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .socials__list {
     display: flex;
@@ -208,6 +212,23 @@ body .body--opened-menu {
     border-top: none;
 }
 
+.main__logo {
+    padding-top: 75px;
+    width: 125px;
+    animation: spinY 3s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes spinY {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .about__text {
     display: flex;
     align-items: center;
@@ -215,7 +236,7 @@ body .body--opened-menu {
     color: rgba(208, 197, 197, 0.592);
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 24px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .about__text-link {
@@ -695,10 +716,13 @@ div#slider_2 {
 
 @keyframes marquee {
     0% {
-        transform: translateX(-100%); /* начать справа */
+        transform: translateX(-100%);
+        /* начать справа */
     }
+
     100% {
-        transform: translateX(0); /* закончить слева */
+        transform: translateX(0);
+        /* закончить слева */
     }
 }
 
