@@ -415,7 +415,7 @@ body .body--opened-menu {
     height: auto;
     display: block;
     border-radius: 5px;
-    border: 2px solid transparent;
+    border: 0.5px solid transparent;
     border-image-source: linear-gradient(to right, rgb(101, 0, 101), rgb(247, 0, 255), rgb(0, 255, 0));
     border-image-slice: 1;
     border-image-width: 10px;
@@ -430,7 +430,7 @@ body .body--opened-menu {
     padding: 10px 10px;
     border: none;
     border-radius: 10px;
-    background: rgba(21, 255, 0, 0.26);
+    background: rgba(255, 255, 255, 0.595);
     color: white;
     font-size: 16px;
     cursor: pointer;
