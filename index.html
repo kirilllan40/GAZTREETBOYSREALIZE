@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self'; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data:;
+        object-src 'none';">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Одежда, музыка и культура GAZTREETBOYS. Присоединяйся к сообществу!">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -113,7 +120,8 @@
                 <div class="container">
                     <div class="promo__wrapper">
                         <div class="promo__video">
-                            <video  class="promo__video-1" id="video" src="img/video/promo-gaz2.mp4" autoplay loop muted playsinline></video>
+                            <video class="promo__video-1" id="video" src="img/video/promo-gaz2.mp4" autoplay loop muted
+                                playsinline></video>
                             <button class="mute__btn" id="muteBtn">🔇</button>
                         </div>
                     </div>
@@ -176,8 +184,7 @@
                         <div class="market__slider-wrapper swiper-wrapper" id="slider_2">
                             <div class="market__slide swiper-slide">
                                 <a class="slide__description-link" href="#">
-                                    <img class="slide__img" src="img/slider_files/aquagaz.png"
-                                        alt="Футболка">
+                                    <img class="slide__img" src="img/slider_files/aquagaz.png" alt="Футболка">
                                     <div class="slide__description">
                                         <p>AQUAGAZ-T-SHIRT</p>
                                         <p>3300₽</p>
@@ -186,8 +193,7 @@
                             </div>
                             <div class="market__slide swiper-slide">
                                 <a class="slide__description-link" href="#">
-                                    <img class="slide__img" src="img/slider_files/gazgirlpink.png"
-                                        alt="Футболка">
+                                    <img class="slide__img" src="img/slider_files/gazgirlpink.png" alt="Футболка">
                                     <div class="slide__description">
                                         <p>GAZTREETSPOT</p>
                                         <p>3300₽</p>
@@ -196,7 +202,8 @@
                             </div>
                             <div class="market__slide swiper-slide">
                                 <a class="slide__description-link" href="#">
-                                    <img class="slide__img" src="img/slider_files/gazboyswhitetshirt.png" alt="Футболка">
+                                    <img class="slide__img" src="img/slider_files/gazboyswhitetshirt.png"
+                                        alt="Футболка">
                                     <div class="slide__description">
                                         <p>GAZTREETBOYS</p>
                                         <p>3300₽</p>
@@ -205,8 +212,7 @@
                             </div>
                             <div class="market__slide swiper-slide">
                                 <a class="slide__description-link" href="#">
-                                    <img class="slide__img" src="img/slider_files/gazgirlswhite.png"
-                                        alt="Футболка">
+                                    <img class="slide__img" src="img/slider_files/gazgirlswhite.png" alt="Футболка">
                                     <div class="slide__description">
                                         <p>GAZTREETGIRLS</p>
                                         <p>3300₽</p>
@@ -227,7 +233,7 @@
                     <div class="news__wrapper">
                         <div class="news__item">
                             <img class="news__item-img" src="img/gallery_items/news_post2.jpg"
-                                alt="Новостное изображение">
+                                alt="Новостное изображение" loading="lazy">
                             <div class="news__item-text">
                                 <p>
                                     Всем привет, хотели поблагодарить всех, кто присутствовал на маркете и поддерживал
@@ -245,7 +251,7 @@
                         <img class="news__star" src="img/black_star.svg">
                         <div class=" news__item">
                             <img class="news__item-img" src="img/gallery_items/GAZNEWSitem.jpg"
-                                alt="Новостное изображение">
+                                alt="Новостное изображение" loading="lazy">
                             <div class="news__item-text">
                                 <p>24ый был год полон приключений и на самом деле выдался очень клевым. запустили
                                     gaztreetboys с Гошаном, выпустил альбом After School, сделали и выпустили первый
@@ -257,7 +263,7 @@
                                     геометрической прогрессии. всех обнял, газтритбойс 🤮</p>
                             </div>
                         </div>
-                        <img class="news__star" src="img/black_star.svg">
+                        <img class="news__star" src="img/black_star.svg" loading="lazy">
                         <div class="news__item"> <img class="news__item-img" src="img/gallery_items/news_post1.jpg"
                                 alt="Новостное изображение">
                             <div class="news__item-text">
@@ -282,9 +288,9 @@
             <section class="telegram">
                 <div class="container">
                     <div class="telegram__wrapper">
-                        <img class="telegram__qr" src="img/telegram-qr.jpg" alt="QR код">
+                        <img class="telegram__qr" src="img/telegram-qr.jpg" alt="QR код" loading="lazy">
                         <div class="telegram__text">
-                            <h1 class="telegram__text-title">Присоединяйся к GAZTREET сообществу</h1>
+                            <h2 class="telegram__text-title">Присоединяйся к GAZTREET сообществу</h2>
                             <p class="telegram__text-main">Следи за всеми событиями не отрываясь от туалета</p>
                         </div>
                     </div>
