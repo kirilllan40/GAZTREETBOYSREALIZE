@@ -308,7 +308,7 @@ body .body--opened-menu {
 
 
 .gallery__slider-item img {
-    width: 70%;
+    width: 67%;
     min-width: 365px;
     max-width: 90%;
     height: 550px;
@@ -425,7 +425,7 @@ body .body--opened-menu {
 
 .mute__btn {
     position: absolute;
-    bottom: 8%;    
+    bottom: 8%;
     right: 5%;
     padding: 10px 10px;
     border: none;
@@ -537,7 +537,6 @@ div#slider_2 {
     background: url(img/video-background-graffity4.jpg) no-repeat;
     background-size: cover;
     margin-top: 80px;
-    padding-bottom: 40px;
     border-top: 5px black solid;
 }
 
@@ -641,6 +640,80 @@ div#slider_2 {
 
 /* ================================= */
 
+.personal {
+    background: linear-gradient(rgba(109, 51, 113, 0.645), rgba(83, 50, 85, 0.6)), url(img/personal-back.jpg) no-repeat;
+    background-size: cover;
+    border-top: 2px solid rgb(255, 104, 205);
+
+}
+
+.personal__wrapper {}
+
+.personal__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.personal__title-text {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.personal__title-par{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.personal__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.personal__star {
+    max-width: 39px;
+}
+
+.personal__items-video {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.personal__items-imges {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.personal__items-img {
+    width: 300px;
+    height: 499px;
+    max-width: 300px;
+    max-height: 499px;
+    border-radius: 20px;
+}
+
+.personal__items-img2 {
+    max-width: 200px;
+}
+
+/* ================================= */
 
 .telegram {
     background: linear-gradient(rgb(21 21 21 / 80%), rgb(27 23 23 / 50%)), url(img/telegram-back.jpg) no-repeat;
@@ -890,46 +963,109 @@ div#slider_2 {
     .gallery__slider-item img {
         height: 380px;
     }
-
-    /* 
-    .market__slide {
-        max-width: 385px;
-    } */
-
-}
-
-@media (max-width: 500px) {
-    .market__slider {
-        width: 93%;
+/* ------------------------------------------ */
+    .personal__title-text{
+        font-size: 40px;
     }
 
-    /* .modal__window {
+    .personal__title-par {
+        font-size: 20px;
+    }
+
+    .personal__items {
+        padding: 40px 20px  40px 20px;
+        gap: 10px;
+    }
+    .personal__items-video {
+        max-height: 340px;
+        max-width: 340px;
+    }
+
+    .personal__star {
+    max-width: 29px;
+}
+
+    .personal__items-img {
+        width: 186px;
+        height: 339px;
+        max-height: 339px;
+        max-width: 186px;
+    }
+
+    .personal__items-img2 {
+        width: 130px;
+        height: 130px;
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+/* --------------------------------------- */
+    @media (max-width: 500px) {
+        .market__slider {
+            width: 93%;
+        }
+
+        /* .modal__window {
         height: 90%;
     } */
 
-    .promo__video {
-        width: 95%;
+        .promo__video {
+            width: 95%;
+        }
     }
+
+    @media (max-height: 600px) {
+
+
+        .modal__window {
+            height: 93%;
+        }
+    }
+
+    @media (max-width: 415px) {
+        .nav__text-link {
+            font-size: 16px;
+        }
+
+        .nav__list {
+            font-size: 16px;
+        }
+
+        .personal__items-video {
+        max-height: 270px;
+        max-width: 270px;
+    }
+
+    .personal__items-img {
+        width: 155px;
+        height: 270px;
+        max-height: 339px;
+        max-width: 186px;
+    }
+
+        .telegram__wrapper {
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width: 345px) {
+.gallery__slider-item img {
+    height: 250px;
+    width: 280px;
+    min-width: 280px;
 }
 
-@media (max-height: 600px) {
-
-
-    .modal__window {
-        height: 93%;
-    }
+.news__item {
+    width: 90%;
 }
 
-@media (max-width: 415px) {
-    .nav__text-link {
-        font-size: 16px;
-    }
-
-    .nav__list {
-        font-size: 16px;
-    }
-
-    .telegram__wrapper {
-        padding-left: 0;
-    }
+.news__item-img {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
 }
+
+.news__item-text {
+    font-size: 12px;
+}
+    }
