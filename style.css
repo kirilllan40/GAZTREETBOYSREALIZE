@@ -192,6 +192,10 @@ body .body--opened-menu {
     padding-top: 5px;
 }
 
+.socials__text-item:hover {
+    transform: scale(1.1);
+}
+
 .socials__icon {
     width: 35px;
 }
@@ -772,6 +776,10 @@ div#slider_2 {
 
 .footer__socials-nav {
     margin-top: 155px;
+}
+
+.nav__text-item:hover {
+    transform: scale(1.1);
 }
 
 
