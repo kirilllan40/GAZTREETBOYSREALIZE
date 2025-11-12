@@ -630,12 +630,12 @@ div#slider_2 {
     align-items: center;
     width: 100%;
     padding: 80px;
-    font-size: 30px;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 45px;
+    font-family: "Amatic SC", sans-serif;
     color: rgb(153, 255, 0);
     text-transform: uppercase;
-    letter-spacing: .25ch;
-    text-shadow: -1ch 0 2px black, -1ch 0 white;
+    letter-spacing: .18ch;
+    text-shadow: -1ch 0 1px black, -1ch 0 white;
 }
 
 /* ================================= */
@@ -654,7 +654,7 @@ div#slider_2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 60px;
     gap: 20px;
 }
 
