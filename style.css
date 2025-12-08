@@ -871,7 +871,7 @@ body .body--opened-menu {
     .market__wrapper {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: repeat(2, 200px);
-
+        gap: 40px;
     }
 
     .telegram {
