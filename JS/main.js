@@ -69,15 +69,16 @@ const swiper = new Swiper('.market__slider', {
     loop: true,
     speed: 400,
     autoHeight: true,
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 40,
     grabCursor: true,
 
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    // If we need pagination
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+
+
     pagination: {
         el: '.slider__pagination',
         type: 'bullets',
@@ -93,6 +94,10 @@ const swiper = new Swiper('.market__slider', {
 
 
     breakpoints: {
+
+        0: {
+            slidesPerView: 1,
+        },
 
         500: {
             slidesPerView: 2,
@@ -115,7 +120,7 @@ const swiper = new Swiper('.market__slider', {
 // modal -------------------------------------------
 
 const modal = document.querySelector('.modal');
-const modalButton = document.querySelectorAll('.slide__description-link');
+const modalButton = document.querySelectorAll('.market__item-link');
 
 modalButton.forEach(b => b.addEventListener('click', openModal));
 modal.addEventListener('click', closeModal);
