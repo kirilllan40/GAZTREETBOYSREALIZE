@@ -1063,7 +1063,12 @@ body .body--opened-menu {
 
     .market__wrapper {
         grid-template-rows: repeat(2, auto);
-        grid-template-columns: repeat(2, 120px);
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .market__item-points {
+        align-items: center;
+        padding-left: 0px;
     }
 }
 
@@ -1072,10 +1077,24 @@ body .body--opened-menu {
 @media (max-width: 390px) {
 
     .market__item-points {
-        font-size: 5vw;
+        font-size: 4vw;
         padding-left: 0px;
         align-items: center;
     }
+
+    .market__wrapper {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 130px);
+    }
+}
+
+
+@media (max-width: 390px) {
+.market__wrapper {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 130px);
+    }
+
 }
 
 /* ----------------------------------------------------- */
