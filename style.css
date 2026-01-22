@@ -82,7 +82,7 @@ body .body--opened-menu {
 
 .modal__window {
     position: relative;
-    background: white;
+    background: black;
     height: 70%;
     width: 600px;
     border-radius: 10px 10px 10px 10px;
@@ -92,12 +92,13 @@ body .body--opened-menu {
     gap: 10px;
     font-family: "Amatic SC", sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 27px;
+    color: rgb(255, 15, 15);
 }
 
 .modal__closed {
     position: absolute;
-    fill: rgb(0, 0, 0);
+    fill: rgb(255, 15, 15);
     top: 20px;
     right: 5px;
     padding-top: 10px;
@@ -150,6 +151,7 @@ body .body--opened-menu {
 .modal__text {
     text-align: center;
     max-width: 500px;
+
 }
 
 .modal__link {
@@ -362,7 +364,7 @@ body .body--opened-menu {
     background-color: white;
     height: 100%;
     border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    /* border-bottom: 5px solid black; */
 }
 
 .promo__wrapper {
@@ -445,80 +447,111 @@ body .body--opened-menu {
 /* ================================ */
 
 .market {
-    padding-bottom: 25px;
-    padding-top: 60px;
-    /* background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.224), rgb(0, 0, 0)); */
-    background: black;
     background-size: contain;
-    background-color: black;
+    background-position: 25% 55%;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
 }
 
 .market__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3, auto);
+    position: relative;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 70px;
     width: 100%;
-    height: 100%;
-    padding-top: 60px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    padding-top: 30px;
+}
+
+.market__items {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.market__story {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.market__story-text {
+    width: 500px;
+    height: 75px;
+    font-family: "Amatic SC", sans-serif;
+    color: red;
+    font-weight: 600;
+}
+
+.market__story-end {
+    max-width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    color: rgb(255, 15, 15);
+    font-weight: 600;
+}
+
+
+.market__img {
+    width: 74%;
 }
 
 .market__item-link {
-    color: white;
-    transition: 0.5s;
-}
-
-.market__item-link:hover {
-    color: rgb(153, 255, 0);
-}
-
-.market__item {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.market__item-img {
-    width: 100%;
-    max-height: 200px;
-    /* border-top: 2px rgb(153, 255, 0) solid;
-    border-right: 2px rgb(153, 255, 0) solid;
-    border-left: 2px rgb(153, 255, 0) solid; */
-
-    border: double 2px transparent;
-    border-radius: 30px;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
-        linear-gradient(to right, rgb(0, 221, 0), rgb(255, 36, 255));
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-radius: 15px;
-    border-bottom: none;
-}
-
-.market__item-points {
-    display: flex;
-    padding-top: 20px;
-    flex-direction: column;
-    font-family: "Amatic SC", sans-serif;
+    color: rgb(255, 15, 15);
+    font-size: 45px;
     font-weight: 600;
-    font-size: 20px;
-    gap: 12px;
-    width: 250px;
-    padding-left: 33px;
+    font-family: "Amatic SC", sans-serif;
+    text-align: center;
 }
 
-.item__points-text:hover {}
+.market__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-size: contain;
+}
 
+.market__background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
 
-
-.item__points-text {}
-
-.item__points-text:nth-child(2) {
-    font-size: 30px;
+.background__video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
 }
 
 /* ================================= */
@@ -527,8 +560,8 @@ body .body--opened-menu {
 .news {
     background: url(img/video-background-graffity4.jpg) no-repeat;
     background-size: cover;
-    margin-top: 80px;
-    border-top: 5px black solid;
+    /* margin-top: 80px;
+    border-top: 5px black solid; */
 }
 
 .news__title {
@@ -838,12 +871,72 @@ body .body--opened-menu {
 /* =============================== */
 
 @media (max-width: 1125px) {
-    .gallery__wrapper {}
 
-    .market__slider {
-        width: 93%;
+    .market__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+        padding-top: 15px;
     }
 
+    .market__items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 40px;
+    }
+
+    .market__story {
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .market__story-text {
+        width: 100%;
+        height: 100%;
+        font-family: "Amatic SC", sans-serif;
+        color: red;
+        font-weight: 600;
+    }
+
+    .market__story-end {
+        max-width: 100%;
+        font-size: 21px;
+        text-align: center;
+        font-family: "Amatic SC", sans-serif;
+        color: rgb(255, 15, 15);
+        font-weight: 600;
+    }
+
+
+    .market__img {
+        width: 65%;
+    }
+
+    .market__item-link {
+        color: rgb(255, 15, 15);
+        font-size: 30px;
+        font-weight: 600;
+        font-family: "Amatic SC", sans-serif;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
 
 
