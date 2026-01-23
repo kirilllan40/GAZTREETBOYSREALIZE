@@ -139,3 +139,12 @@ function closeModal(e) {
 }
 
 
+
+const Myvideo = document.querySelector('.market__background-video');
+const container = document.querySelector('.market__background');
+
+console.log('Видео:', video.videoWidth, 'x', video.videoHeight);
+console.log('Контейнер:', container.offsetWidth, 'x', container.offsetHeight);
+console.log('Соотношение сторон видео:', video.videoWidth / video.videoHeight);
+console.log('Соотношение контейнера:', container.offsetWidth / container.offsetHeight);
+
