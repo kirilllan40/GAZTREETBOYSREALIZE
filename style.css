@@ -83,7 +83,7 @@ body .body--opened-menu {
 .modal__window {
     position: relative;
     background: black;
-    height: 70%;
+    max-height: fit-content;
     width: 600px;
     border-radius: 10px 10px 10px 10px;
     display: flex;
