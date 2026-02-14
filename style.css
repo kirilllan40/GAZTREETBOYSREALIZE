@@ -630,7 +630,7 @@ body .body--opened-menu {
 .news__item-text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 18px;
     padding: 10px;
