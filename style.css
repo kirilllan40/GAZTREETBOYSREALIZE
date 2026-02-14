@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'basic.css';
 @import 'header.css';
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 /* ==================================== */
 body .body--opened-menu {
@@ -517,8 +518,34 @@ body .body--opened-menu {
     font-size: 45px;
     font-weight: 600;
     font-family: "Amatic SC", sans-serif;
+    text-transform: uppercase;
     text-align: center;
+    transition: all 0.3s ease;
 }
+
+.market__item-link:hover {
+    animation: shake 0.8s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px);
+    }
+    25% {
+        transform: translate(-1px, 2px);
+    }
+    50% {
+        transform: translate(2px, -1px);
+    }
+    75% {
+        transform: translate(-2px, 0px);
+    }
+    100% {
+        transform: translate(1px, -2px);
+    }
+}
+
+
 
 .market__background {
     position: absolute;
