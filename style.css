@@ -178,7 +178,6 @@ body .body--opened-menu {
     background-color: white;
     width: 100%;
     height: 860px;
-    border-bottom: 1px black solid;
 }
 
 .about__wrapper {
@@ -286,8 +285,6 @@ body .body--opened-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px black solid;
-    border-bottom: 5px black solid;
 }
 
 
@@ -511,6 +508,8 @@ body .body--opened-menu {
 
 .market__img {
     width: 74%;
+    animation: spinY 3s linear infinite;
+    transform-style: preserve-3d;
 }
 
 .market__item-link {
@@ -693,8 +692,6 @@ body .body--opened-menu {
 .personal {
     background: linear-gradient(rgba(109, 51, 113, 0.645), rgba(83, 50, 85, 0.6)), url(img/personal-back.jpg) no-repeat;
     background-size: cover;
-    border-top: 2px solid rgb(255, 104, 205);
-
 }
 
 .personal__wrapper {}
@@ -782,7 +779,6 @@ body .body--opened-menu {
     background-size: cover;
     width: 100%;
     height: 700px;
-    border-top: 5px solid black;
 }
 
 .telegram__wrapper {
