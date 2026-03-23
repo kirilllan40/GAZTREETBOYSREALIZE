@@ -172,18 +172,54 @@ body .body--opened-menu {
 
 .about {
     position: relative;
-    background: linear-gradient(rgb(21 21 21 / 80%), rgb(27 23 23 / 50%)), url(img/backgrounds/gzbTilda.jpg) no-repeat;
-    background-position: 25% 55%;
-    background-size: cover;
+    background: none;
+    /* background-position: 25% 55%;
+    background-size: cover; */
     background-color: white;
     width: 100%;
     height: 860px;
 }
 
+
+.about__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.about__slider .swiper-slide {
+    background-size: cover;
+    background-position: 25% 55%;
+    background-repeat: no-repeat; 
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(21 21 21 / 80%), rgb(27 23 23 / 50%));
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+
 .about__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
 }
 
 .socials__list {
@@ -269,6 +305,8 @@ body .body--opened-menu {
     justify-content: center;
     gap: 3px;
 }
+
+
 
 
 /* =================================== */
@@ -464,7 +502,7 @@ body .body--opened-menu {
     font-size: 50px;
     color: rgb(255, 255, 255);
     z-index: 1;
-    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .market__items {
@@ -530,15 +568,19 @@ body .body--opened-menu {
     0% {
         transform: translate(1px, 1px);
     }
+
     25% {
         transform: translate(-1px, 2px);
     }
+
     50% {
         transform: translate(2px, -1px);
     }
+
     75% {
         transform: translate(-2px, 0px);
     }
+
     100% {
         transform: translate(1px, -2px);
     }

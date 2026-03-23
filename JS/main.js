@@ -18,6 +18,24 @@
 
 })()
 
+
+// --------------background-slider-------------
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutSlider = new Swiper('.about__slider', {
+        loop: true,
+        effect: 'slide',
+        // fadeEffect: {
+        //     crossFade: true,
+        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+        allowTouchMove: false,
+    });
+});
+
 //---------------first-slider------------------
 
 const swiperGallery = new Swiper('.gallery__slider', {
@@ -45,22 +63,22 @@ const swiperGallery = new Swiper('.gallery__slider', {
 });
 
 // -----------------sound----------------------
-    const video = document.getElementById("video");
-    const muteBtn = document.getElementById("muteBtn");
+const video = document.getElementById("video");
+const muteBtn = document.getElementById("muteBtn");
 
 
-    muteBtn.addEventListener("click", () => {
-        console.log("Кнопка нажата");
-        if (video.muted) {
-            video.muted = false;
-            video.volume = 1.0;
-            video.play().catch(err => console.log("play blocked:", err));
-            muteBtn.textContent = "🔊";
-        } else {
-            video.muted = true;
-            muteBtn.textContent = "🔇";
-        }
-    });
+muteBtn.addEventListener("click", () => {
+    console.log("Кнопка нажата");
+    if (video.muted) {
+        video.muted = false;
+        video.volume = 1.0;
+        video.play().catch(err => console.log("play blocked:", err));
+        muteBtn.textContent = "🔊";
+    } else {
+        video.muted = true;
+        muteBtn.textContent = "🔇";
+    }
+});
 
 
 // -----------------swiper---------------------
